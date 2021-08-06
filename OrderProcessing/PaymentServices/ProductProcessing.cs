@@ -2,8 +2,9 @@
 {
     public class ProductProcessing
     {
-        public ProductType GetDischargedTypeProduct()
+        public ProductType GetDischargedTypeProduct(string memberId)
         {
+            //BL to get payment processed for order using memberId
             return ProductType.Physical;
         }
     }

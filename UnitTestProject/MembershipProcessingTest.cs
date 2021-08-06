@@ -13,10 +13,10 @@ namespace UnitTestProject
             MembershipProcessing membership = new MembershipProcessing(new EmailService());
 
             //Act
-            string paymentProcess = membership.ActivateMember("xyz");
+            string paymentProcess = membership.ActivateMember("xyz@abc.com");
 
             //Assert
-            Assert.Equal("Email sent to 123 for Member Activation", paymentProcess);
+            Assert.Equal("Email sent to xyz@abc.com for Member Activation", paymentProcess);
             Assert.NotEqual("Email sent to 123", paymentProcess);
         }
 
@@ -27,10 +27,10 @@ namespace UnitTestProject
             MembershipProcessing membership = new MembershipProcessing(new EmailService());
 
             //Act
-            string paymentProcess = membership.UpgradeMember("xyz");
+            string paymentProcess = membership.UpgradeMember("xyz@abc.com");
 
             //Assert
-            Assert.Equal("Email sent to xyz for Member Upgrade", paymentProcess);
+            Assert.Equal("Email sent to xyz@abc.com for Member Upgrade", paymentProcess);
             Assert.NotEqual("Email sent to 123", paymentProcess);
         }
     }

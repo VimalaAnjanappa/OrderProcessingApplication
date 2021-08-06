@@ -14,7 +14,7 @@ namespace OrderProcessing.PaymentServices
         public string ActivateMember(string memberName)
         {
             //BL to create member details
-            return _notifyService.SendMessage("123", "Member Activation");
+            return _notifyService.SendMessage("xyz@abc.com", "Member Activation");
         }
 
         public string UpgradeMember(string memberId)
