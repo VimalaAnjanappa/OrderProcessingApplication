@@ -2,9 +2,9 @@
 {
     public class BookOrVideoProcessing
     {
-        public string GetDischargedOrder(IPaymentBookOrVideo obj)
+        public string GetDischargedOrder(IPaymentBookOrVideo obj, string memberId)
         {
-            return obj.GetDischargedOrder();
+            return obj.GetDischargedOrder(memberId);
         }
     }
 }

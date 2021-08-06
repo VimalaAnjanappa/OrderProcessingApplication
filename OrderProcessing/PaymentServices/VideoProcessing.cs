@@ -2,9 +2,9 @@
 {
     public class VideoProcessing : IPaymentBookOrVideo
     {
-        public string GetDischargedOrder()
+        public string GetDischargedOrder(string memberId)
         {
-            // BL for getting name of video ordered
+            // BL for getting name of video ordered using memberId
             return "Learning to Ski";
         }
     }

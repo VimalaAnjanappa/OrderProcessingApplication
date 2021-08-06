@@ -2,6 +2,6 @@
 {
     public interface IPaymentBookOrVideo
     {
-        string GetDischargedOrder();
+        string GetDischargedOrder(string memberId);
     }
 }
